@@ -1,0 +1,52 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.mainframe{
+    height: 100%;
+    width: 100%;
+}
+
+.titlebar{
+    padding: 0px !important;
+    -webkit-app-region : drag;
+    height: 35px;
+    
+
+}
+.infoplane{
+    height: 100%;
+    width: 300px;
+    float: left;
+}
+
+.photoplane{
+    height: 100%;
+    width: calc(100% - 300px);
+    float: right;
+}
+
+.ctrlbtns{
+    float: left;
+    height: 35px ;
+    -webkit-app-region : no-drag;
+    
+}
+
+.btncontrols{
+    height: 35px !important;
+    border-radius: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    box-shadow: none !important;
+    margin-left: 0px !important;
+
+}
