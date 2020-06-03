@@ -2,9 +2,10 @@
   "name": "instacrush",
   "version": "1.0.1",
   "description": "Get HD image of your crush InstaDP",
-  "main": "index.js",
+  "main": "app",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "author": "",
   "license": "ISC",
