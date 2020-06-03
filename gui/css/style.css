@@ -68,8 +68,9 @@ body {
 }
 
 .infocontents {
-  margin-left: 50px;
+  margin-left: 25px;
   margin-top: 20px;
+  margin-right: 25px;
 }
 
 .wmsg {
@@ -96,11 +97,19 @@ body {
 }
 
 .searchbtn {
-  background-color: #331796 !important;
+  background: linear-gradient(135deg, #622774 0%, #3D125E 100%);
   color: #ffffff;
   font-weight: bold;
   box-shadow: none;
   margin-left: 110px !important;
   margin-top: 15px;
-  border-radius: 50%;
+}
+
+.searchbtn:hover{
+   color: #00B5F8;
+}
+
+.img-side {
+  width: 400px;
+  height: 500px;
 }
