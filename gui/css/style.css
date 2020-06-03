@@ -1,52 +1,106 @@
-html{
-    height: 100%;
-    width: 100%;
+html {
+  height: 100%;
+  width: 100%;
 }
 
-body{
-    height: 100%;
-    width: 100%;
+body {
+  height: 100%;
+  width: 100%;
 }
 
-.mainframe{
-    height: 100%;
-    width: 100%;
+.mainframe {
+  height: 100%;
+  width: 100%;
 }
 
-.titlebar{
-    padding: 0px !important;
-    -webkit-app-region : drag;
-    height: 35px;
-    
-
-}
-.infoplane{
-    height: 100%;
-    width: 300px;
-    float: left;
+.titlebar {
+  padding: 0px !important;
+  -webkit-app-region: drag;
+  height: 35px;
 }
 
-.photoplane{
-    height: 100%;
-    width: calc(100% - 300px);
-    float: right;
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-Bold.woff2") format("woff2"),
+    url("../fonts/Nunito-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
-.ctrlbtns{
-    float: left;
-    height: 35px ;
-    -webkit-app-region : no-drag;
-    
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Nunito-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
 }
 
-.btncontrols{
-    height: 35px !important;
-    border-radius: 0px !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    box-shadow: none !important;
-    margin-left: 0px !important;
+.infoplane {
+  height: 100%;
+  width: 350px;
+  float: left;
+}
 
+.photoplane {
+  height: 100%;
+  width: calc(100% - 350px);
+  float: right;
+}
+
+.ctrlbtns {
+  float: right !important;
+  height: 35px;
+  -webkit-app-region: no-drag;
+  padding-top: 0px !important;
+  padding-left: 5px !important;
+  margin-right: 0px !important;
+}
+
+.btncontrols {
+  height: 30px !important;
+  border-radius: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 10px !important;
+  padding-top: 0px !important;
+  box-shadow: none !important;
+  margin-left: 0px !important;
+}
+
+.infocontents {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.wmsg {
+  font-size: 38px;
+  font-weight: 800;
+  color: #000000;
+  font-family: "Nunito";
+}
+.subheading {
+  font-size: 19.5px;
+  font-family: "Nunito";
+  color: #272d30;
+  text-align: justify;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.searchbtn {
+  background-color: #331796 !important;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: none;
+  margin-left: 110px !important;
+  margin-top: 15px;
+  border-radius: 50%;
 }
