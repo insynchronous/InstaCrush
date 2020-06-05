@@ -33,15 +33,16 @@
                     Get diplay picture of your crush in HD 😉. Enter username below.
                 </div>
                 </br>
-                <input type="text" class="form-control" placeholder="username">
-                <button type="button" class="btn searchbtn">Search</button>
-
+                <form >
+                <input type="text" id= "username" class="form-control" placeholder="username" required>
+                <button type="button" onclick="remotePythonExecution()" id = "searchTrigger" class="btn searchbtn">Search</button>
+                </form>
             </div>
 
         </div>
 
         <div class="photoplane">
-            <img src="./img/instacrushback.png" class="img-side" alt="">
+            <img src="./img/instacrushback.png" class="img-side" alt="" draggable="false">
         </div>
     </div>
 
