@@ -10,20 +10,22 @@ user_content = graph_request['user']
 
 # User Contents
 
-# name = user_content['full_name']
-# bio = user_content['biography']
-# followers = user_content['edge_followed_by']['count']
-# follows = user_content['edge_follow']['count']
-# profile_hd = user_content['profile_pic_url_hd']
-# det = [name, bio, followers, follows]
-# print(profile_hd)
+name = user_content['full_name']
+bio = user_content['biography'].encode( errors='replace')
+followers = user_content['edge_followed_by']['count']
+follows = user_content['edge_follow']['count']
+profile_hd = user_content['profile_pic_url_hd']
+details = [name, bio, followers, follows, profile_hd]
+details = [(str(x)) for x in details]
+details = " , ".join(details)
+print(repr(details))
 
-user_data_dict = {
-    'name' : user_content['full_name'],
-    'bio' : user_content['biography'],
-    'followers' : user_content['edge_followed_by']['count'],
-    'follows' : user_content['edge_follow']['count'],
-    'profile_hd' : user_content['profile_pic_url_hd'],
-}
 
-print(user_data_dict)
+# user_data_dict = {
+#     'name' : user_content['full_name'],
+#     'bio' : user_content['biography'],
+#     'followers' : user_content['edge_followed_by']['count'],
+#     'follows' : user_content['edge_follow']['count'],
+#     'profile_hd' : user_content['profile_pic_url_hd'],
+# }
+
