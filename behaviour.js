@@ -51,13 +51,11 @@ function remotePythonExecution() {
       var raw_data = JSON.parse(body);
       var user_details = raw_data.graphql.user;
       var bio = user_details.biography;
-      var followers = user_details.edge_followed_by.cout;
+      var followers = user_details.edge_followed_by.count;
       var following = user_details.edge_follow.count;
       var profileHD = user_details.profile_pic_url_hd;
       var fullname = user_details.full_name;
 
-      console.log(fullname);
-      console.log(bio);
 
       document.getElementById("loaderimage").classList.add("hide");
       document.getElementById("userdetailplane").classList.remove("hide");
