@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -104,7 +105,6 @@ body {
   margin-left: 110px !important;
   margin-top: 15px;
   box-shadow:  0px 8px 8px 0px rgb(204, 195, 195);
-  bos
 }
 
 .searchbtn:hover{
@@ -118,4 +118,21 @@ body {
 .img-side {
   width: 400px;
   height: 500px;
+}
+
+.userdetails{
+    font-family: 'Nunito';
+    font-size: 15px;
+}
+.tlabel{
+    font-weight: 800 !important;
+    font-size: 16px;
+    color: #1E1E1E;
+}
+.biodesc{
+    text-align: justify;
+}
+
+.hide{
+    display: none;
 }
