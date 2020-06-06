@@ -33,16 +33,48 @@
                     Get diplay picture of your crush in HD 😉. Enter username below.
                 </div>
                 </br>
-                <form >
-                <input type="text" id= "username" class="form-control" placeholder="username" required>
-                <button type="button" onclick="remotePythonExecution()" id = "searchTrigger" class="btn searchbtn">Search</button>
+                <form>
+                    <input type="text" id="username" class="form-control" placeholder="username" required>
+                    <button type="button" onclick="remotePythonExecution()" id="searchTrigger"
+                        class="btn searchbtn">Search</button>
                 </form>
+                <div class="userdetails noselect hide" style="margin-top: 15px;" id="userdetailplane">
+                    <table>
+                        <tr>
+                            <td class="tlabel">Name:</td>
+                            <td id="usernamedesc"></td>
+                        </tr>
+                        <tr>
+                            <td class="tlabel">Followers:</td>
+                            <td id="userfollowers"></td>
+                        </tr>
+                        <tr>
+                            <td class="tlabel">Follows:</td>
+                            <td id="userfollowedby"> </td>
+                        </tr>
+                        <tr>
+                            <td class="tlabel">Biography:</td>
+                        </tr>
+                    </table>
+                    <div class="biodesc" id="userbio">
+
+
+                    </div>
+                    
+                 
+                </div>
+                <div class="userdetails noselect hide" style="margin-top: 15px;" id="loaderimage">
+                    <img src="./img/loader.gif" class="img-fluid" width="50%" style="margin-left: 75px;">
+                </div>
+                
+
+
             </div>
 
         </div>
 
-        <div class="photoplane">
-            <img src="./img/instacrushback.png" class="img-side" alt="" draggable="false">
+        <div class="photoplane ">
+            <img src="./img/instacrushback.png" id="pimage" class="img-side" alt="" draggable="false">
         </div>
     </div>
 
