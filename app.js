@@ -14,7 +14,10 @@ function createWindow () {
      enableRemoteModule: true
     },
     frame : false,
+    resizable: false,
+    
   })
+  mainWindow.setMenu = null;
 
   // and load the index.html of the app.
   mainWindow.loadFile('./gui/index.html')
